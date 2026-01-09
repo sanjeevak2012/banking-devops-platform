@@ -24,7 +24,7 @@ jobs:
 
     - name: Build, tag, and push image to ECR
       env:
-        ECR_REGISTRY: <453634598036>.dkr.ecr.ap-south-1.amazonaws.com
+        ECR_REGISTRY: 453634598036.dkr.ecr.ap-south-1.amazonaws.com
         ECR_REPOSITORY: transaction-service
         IMAGE_TAG: latest
       run: |
