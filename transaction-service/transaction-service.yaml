@@ -3,9 +3,10 @@ kind: Service
 metadata:
   name: transaction-service
 spec:
-  type: LoadBalancer
   selector:
     app: transaction-service
   ports:
-    - port: 80
+    - protocol: TCP
+      port: 5000
       targetPort: 5000
+  type: ClusterIP
